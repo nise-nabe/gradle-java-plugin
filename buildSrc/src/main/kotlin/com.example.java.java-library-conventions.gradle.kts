@@ -9,5 +9,5 @@ plugins {
     id("com.example.java.java-common-conventions")
 
     // Apply the java-library plugin for API and implementation separation.
-    `java-library`
+    id("com.example.java-library")
 }
