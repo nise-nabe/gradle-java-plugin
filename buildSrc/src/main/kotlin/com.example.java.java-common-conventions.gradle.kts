@@ -21,6 +21,7 @@ dependencies {
     }
 }
 
+@Suppress("UNUSED_VARIABLE")
 testing {
     suites {
         // Configure the built-in test suite
