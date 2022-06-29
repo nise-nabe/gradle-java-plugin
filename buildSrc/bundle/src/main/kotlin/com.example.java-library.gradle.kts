@@ -1,3 +1,7 @@
 plugins {
-    `java-library`
+    id("com.example.java")
+}
+
+configurations {
+    create("api")
 }
