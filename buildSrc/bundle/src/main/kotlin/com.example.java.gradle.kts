@@ -1,23 +1,15 @@
-import org.gradle.api.internal.artifacts.JavaEcosystemSupport
-
 plugins {
-   `jvm-test-suite`
+    id("com.example.java-base")
+    id("com.example.jvm-test-suite")
 }
 
-sourceSets {
-    create(SourceSet.MAIN_SOURCE_SET_NAME)
-}
-
-val schema = project.dependencies.attributesSchema
-JavaEcosystemSupport.configureSchema(schema, objects)
-
-@Suppress("UNUSED_VARIABLE")
-testing {
-    suites {
-        // Configure the built-in test suite
-        val test by creating(JvmTestSuite::class) {
-            // Use JUnit Jupiter test framework
-            useJUnitJupiter("5.8.1")
-        }
-    }
-}
+//@Suppress("UNUSED_VARIABLE")
+//extensions.configure<TestingExtension>("testing") {
+//    suites {
+//        // Configure the built-in test suite
+//        val test by creating(JvmTestSuite::class) {
+//            // Use JUnit Jupiter test framework
+//            useJUnitJupiter("5.8.1")
+//        }
+//    }
+//}
